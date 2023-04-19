@@ -1,0 +1,69 @@
+x=int(input("Select the polygon \n1-->triangle\n2-->square\n3-->rectangle"))
+if(x==1):
+    b=float(input("Base height: "))
+    h=float(input("height: "))
+    print("Area of traingle is ",0.5*b*h)
+elif(x==2):
+    s=float(input("side length: "))
+    print("Area of square is ",s*s)
+elif(x==3):
+    l=float(input("length: "))
+    br=float(input("Breadth: "))
+    print("Area of rectangle is : ",l * br)
+else:
+    print("select the correct polygon")
+
+#Swap 3 nums
+n1=int(input())
+n2=int(input())
+n3=int(input())
+if(n1>n2 and n1>n3):
+      if(n2<n3):
+            temp=n1
+            n1=n2
+            n2=n3
+            n3=temp
+      else:
+            temp=n1
+            n1=n3
+            n3=temp
+ elif n2>n1 and n2>n3:
+      if(n1<n3):
+            temp=n2
+            n1=n3
+            n3=temp
+       else:
+            temp=n2
+            n2=n2
+            n1=n3
+            n3=temp
+else:
+      if(n1>n2):
+            temp=n2
+            n2=n1
+            n1=temp
+ print(n1,n2,n3)
+ 
+ 
+ 
+ 
+ #Fibonacci Series
+ n = int(input("How many terms? "))
+
+n1, n2 = 0, 1
+count = 0
+
+
+if n <= 0:
+   print("Please enter a positive integer")
+elif n <= 2:
+   print("Fibonacci sequence upto",n,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < n:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
