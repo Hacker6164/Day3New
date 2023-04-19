@@ -1,0 +1,12 @@
+x=int(input("Enter a num to check for palindrome"))
+temp=x
+rev=0
+rem=0
+while x!=0:
+          rem=x%10
+          rev=rev*10+rem
+          x=x//10
+if(rev==temp):
+    print("it is a palindrome")
+else:
+    print("Not a palindrome")
