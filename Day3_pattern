@@ -1,0 +1,5 @@
+i=1
+j-1
+x=int(input("Enter the num"))
+fro i in range (1, x+1):
+          for j in range (
